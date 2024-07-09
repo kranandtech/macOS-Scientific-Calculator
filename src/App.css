@@ -1,18 +1,87 @@
-/* Calculator component CSS */
 .calculator {
-    width: 900px;
+    width: 900px; /* Adjust width to fit the layout */
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: #444444;
-    font-family: 'Roboto', sans-serif;
   }
   
-  /* Display component CSS */
   .display {
     background-color: #333333;
     color: white;
+    .calculator {
+      width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background-color: #444444;
+      font-family: 'Roboto', sans-serif; /* Specify Roboto as the font family */
+    }
+    
+    .display {
+      background-color: #333333;
+      color: white;
+      text-align: right;
+      font-size: 2em;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-family: 'Roboto', sans-serif; /* Specify Roboto as the font family */
+    }
+    
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr); /* 10 columns */
+      gap: 10px;
+    }
+    
+    .button {
+      background-color: #888888;
+      color: white;
+      font-size: 1.5em;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-family: 'Roboto', sans-serif; /* Specify Roboto as the font family */
+    }
+    
+    .button:hover {
+      background-color: #aaaaaa;
+    }
+    
+    .button:active {
+      background-color: #666666;
+    }
+    
+    .button.orange {
+      background-color: #f9a825; /* Orange buttons */
+    }
+    
+    .button.orange:hover {
+      background-color: #ffb74d;
+    }
+    
+    .button.orange:active {
+      background-color: #f57c00;
+    }
+    
+    .button.zero {
+      grid-column: span 2; /* Span two columns */
+    }
+    
     text-align: right;
     font-size: 2em;
     padding: 20px;
@@ -22,10 +91,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-family: 'Roboto', sans-serif;
   }
   
-  /* Button component CSS */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columns */
+    gap: 10px;
+  }
+  
   .button {
     background-color: #888888;
     color: white;
@@ -40,7 +113,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
   }
   
   .button:hover {
@@ -52,7 +124,7 @@
   }
   
   .button.orange {
-    background-color: #f9a825;
+    background-color: #f9a825; /* Orange buttons */
   }
   
   .button.orange:hover {
@@ -64,6 +136,6 @@
   }
   
   .button.zero {
-    grid-column: span 2;
+    grid-column: span 2; /* Span two columns */
   }
   
